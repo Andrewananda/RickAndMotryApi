@@ -13,6 +13,7 @@ struct K {
     
     struct TableViewCell {
         static let characterCellIdentifier = "CharacterTableViewCell"
+        static let filterCollectionViewCell = "FilterCollectionViewCell"
     }
     
     struct Api {
@@ -21,4 +22,12 @@ struct K {
         static var invaliedUrl = "Invalied URL"
         static var baseUrl = "https://rickandmortyapi.com/api/character/"
     }
+    
+    struct Color {
+        static let listBorderBackgroundColor = "list_border_color"
+        static let listItemCharacterNameColor = "ListItemCharacterNameColor"
+        static let listItemSpeciesNameColor = "listItemSpeciesNameColor"
+        static let themeBackground = "themeBackground"
+    }
+    
 }

@@ -30,14 +30,14 @@ class CharacterTableViewCell: UITableViewCell {
     let nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
-        label.textColor = UIColor(named: "ListItemCharacterNameColor")
+        label.textColor = UIColor(named: K.Color.listItemCharacterNameColor)
         return label
     }()
     
     let speciesLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
-        label.textColor = UIColor(named: "listItemSpeciesNameColor")
+        label.textColor = UIColor(named: K.Color.listItemSpeciesNameColor)
         return label
     }()
     
@@ -74,7 +74,7 @@ class CharacterTableViewCell: UITableViewCell {
         
         containerView.layer.borderWidth = 1
         containerView.layer.cornerRadius = 12
-        containerView.layer.borderColor = UIColor(named: "list_border_color")?.cgColor
+        containerView.layer.borderColor = UIColor(named: K.Color.listBorderBackgroundColor)?.cgColor
         
         
         NSLayoutConstraint.activate([

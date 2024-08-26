@@ -6,9 +6,8 @@
 //
 
 import Foundation
-
-
 import Network
+
 
 class NetworkManager {
     private let monitor = NWPathMonitor()
@@ -23,6 +22,11 @@ class NetworkManager {
             } else {
                 self.isConnected = false
             }
+            
+            print("Path: \(path)")
+            print("Path Status: \(path.status)")
+            print("Available Interfaces: \(path.availableInterfaces)")
+            print("Expensive: \(path.isExpensive)")
         }
 
         monitor.start(queue: queue)

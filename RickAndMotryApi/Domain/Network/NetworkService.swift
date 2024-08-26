@@ -16,9 +16,15 @@ class NetworkService {
         networkManager = NetworkManager()
     }
         
-    func fetchCharacters(page: Int, completion: @escaping (Result<CharacterResponse, Error>) -> Void) {
+    func fetchCharacters(page: Int, filter: String = "", completion: @escaping (Result<CharacterResponse, Error>) -> Void) {
         
-        guard let url = URL(string: "\(K.Api.baseUrl)?page=\(page)") else {
+        var args = ""
+        if filter != "" {
+            args = "&status=\(filter)"
+        }
+        
+        
+        guard let url = URL(string: "\(K.Api.baseUrl)?page=\(page)\(args)") else {
             completion(.failure(NetworkError.invalidURL))
             return
         }

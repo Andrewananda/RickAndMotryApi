@@ -27,6 +27,7 @@
 		FAF2C2042C7D007800C51E30 /* CustomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2032C7D007800C51E30 /* CustomPopup.swift */; };
 		FAF2C2062C7D014D00C51E30 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2052C7D014D00C51E30 /* Presenter.swift */; };
 		FAF2C2092C7D03B100C51E30 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2082C7D03B100C51E30 /* Utilities.swift */; };
+		FAF2C20C2C7D129C00C51E30 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C20B2C7D129C00C51E30 /* FilterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		FAF2C2032C7D007800C51E30 /* CustomPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopup.swift; sourceTree = "<group>"; };
 		FAF2C2052C7D014D00C51E30 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		FAF2C2082C7D03B100C51E30 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FAF2C20B2C7D129C00C51E30 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,13 +142,8 @@
 		FAF2C1A62C7CAC7C00C51E30 /* RickAndMotryApi */ = {
 			isa = PBXGroup;
 			children = (
-				FAF2C1E02C7CB2A300C51E30 /* App */,
+				FAF2C1E02C7CB2A300C51E30 /* RickAndMotry */,
 				FAF2C1DC2C7CB1E600C51E30 /* Domain */,
-				FAF2C1A72C7CAC7C00C51E30 /* AppDelegate.swift */,
-				FAF2C1A92C7CAC7C00C51E30 /* SceneDelegate.swift */,
-				FAF2C1B02C7CAC7E00C51E30 /* Assets.xcassets */,
-				FAF2C1B22C7CAC7E00C51E30 /* LaunchScreen.storyboard */,
-				FAF2C1B52C7CAC7E00C51E30 /* Info.plist */,
 			);
 			path = RickAndMotryApi;
 			sourceTree = "<group>";
@@ -193,13 +190,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FAF2C1E02C7CB2A300C51E30 /* App */ = {
+		FAF2C1E02C7CB2A300C51E30 /* RickAndMotry */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2C20A2C7D0E1500C51E30 /* SupportFiles */,
 				FAF2C1F62C7CE26A00C51E30 /* Utilities */,
 				FAF2C1E12C7CB2EC00C51E30 /* Views */,
 			);
-			path = App;
+			path = RickAndMotry;
 			sourceTree = "<group>";
 		};
 		FAF2C1E12C7CB2EC00C51E30 /* Views */ = {
@@ -225,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF2C1E92C7CB75D00C51E30 /* CharacterTableViewCell.swift */,
+				FAF2C20B2C7D129C00C51E30 /* FilterCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +288,18 @@
 				FAF2C2082C7D03B100C51E30 /* Utilities.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAF2C20A2C7D0E1500C51E30 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2C1B52C7CAC7E00C51E30 /* Info.plist */,
+				FAF2C1B22C7CAC7E00C51E30 /* LaunchScreen.storyboard */,
+				FAF2C1B02C7CAC7E00C51E30 /* Assets.xcassets */,
+				FAF2C1A72C7CAC7C00C51E30 /* AppDelegate.swift */,
+				FAF2C1A92C7CAC7C00C51E30 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +443,7 @@
 				FAF2C2092C7D03B100C51E30 /* Utilities.swift in Sources */,
 				FAF2C1DF2C7CB24E00C51E30 /* Character.swift in Sources */,
 				FAF2C1FE2C7CFA8700C51E30 /* NetworkManager.swift in Sources */,
+				FAF2C20C2C7D129C00C51E30 /* FilterCollectionViewCell.swift in Sources */,
 				FAF2C1DB2C7CB15200C51E30 /* NetworkService.swift in Sources */,
 				FAF2C1E52C7CB32B00C51E30 /* CharacterViewModel.swift in Sources */,
 				FAF2C1AA2C7CAC7C00C51E30 /* SceneDelegate.swift in Sources */,
@@ -616,7 +628,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CY5Z68UX8Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickAndMotryApi/Info.plist;
+				INFOPLIST_FILE = RickAndMotryApi/RickAndMotry/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -644,7 +656,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CY5Z68UX8Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickAndMotryApi/Info.plist;
+				INFOPLIST_FILE = RickAndMotryApi/RickAndMotry/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

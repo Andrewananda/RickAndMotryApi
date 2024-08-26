@@ -27,6 +27,9 @@ struct CharacterDetailView: View {
                   } placeholder: {
                       ProgressView()
                           .progressViewStyle(CircularProgressViewStyle())
+                          .frame(width: UIScreen.main.bounds.width, height: 400)
+                          .cornerRadius(20)
+                          .padding(.horizontal, 20)
                   }
                   .clipShape(RoundedRectangle(cornerRadius: 20))
                   .padding(.bottom, 20)
@@ -73,7 +76,7 @@ struct CharacterDetailView: View {
                       }
                       Spacer()
                       
-                      Text("Status")
+                      Text(character.status)
                           .font(.system(size: 14, weight: .semibold))
                           .foregroundColor(.white)
                           .padding(.horizontal, 12)

@@ -19,13 +19,20 @@ class CharacterViewModel {
     var isLoading: ((_ : Bool) -> Void)?
     var errorResponse: ((_ : NetworkError) -> Void)?
     
-    func fetchCharacters() {
+    func fetchCharacters(filter: String = "", shouldClear: Bool = false) {
         guard !isFetching else { return }
         isFetching = true
         isLoading?(true)
         
+        if !filter.isEmpty {
+            if shouldClear {
+                currentPage = 1
+                characters.removeAll()
+            }
+        }
         
-        NetworkService.shared.fetchCharacters(page: currentPage) { [weak self] result in
+        
+        NetworkService.shared.fetchCharacters(page: currentPage, filter: filter) { [weak self] result in
             guard let self = self else { return }
             self.isFetching = false
             self.isLoading?(false)
