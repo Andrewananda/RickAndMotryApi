@@ -43,7 +43,6 @@ class CharacterViewController: UIViewController {
           
           let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
           collectionView.showsHorizontalScrollIndicator = false
-          collectionView.backgroundColor = .clear
           collectionView.register(FilterCollectionViewCell.self, forCellWithReuseIdentifier: FilterCollectionViewCell.identifier)
           return collectionView
       }()
@@ -52,6 +51,7 @@ class CharacterViewController: UIViewController {
     private func setupView() {
         
         
+        view.backgroundColor = UIColor.systemBackground
         filterCollectionView.delegate = self
         filterCollectionView.dataSource = self
         view.addSubview(filterCollectionView)
@@ -176,7 +176,7 @@ extension CharacterViewController : UICollectionViewDelegate, UICollectionViewDa
        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
            let filterText = filters[indexPath.row]
            let textSize = (filterText as NSString).size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .medium)])
-           return CGSize(width: textSize.width + 40, height: 40)
+           return CGSize(width: textSize.width + 40, height: 50)
        }
     
 }

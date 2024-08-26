@@ -61,7 +61,7 @@ struct CharacterDetailView: View {
                               .foregroundColor(.listItemCharacterName)
                               .frame(alignment: .leading)
                           
-                          Text("\(character.species) • \(character.gender)")
+                          Text("\(character.type ?? "") \(character.type == "" ? "" : "•") \(character.gender)")
                               .font(.system(size: 14, weight: .medium))
                               .foregroundColor(.gray)
                               .frame(alignment: .leading)

@@ -29,8 +29,9 @@ class NetworkService {
             return
         }
         
-        if !(networkManager?.isConnected ?? false) {
+        guard let isConnected = networkManager?.isConnected else {
             completion(.failure(NetworkError.internetConnection))
+            return
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
