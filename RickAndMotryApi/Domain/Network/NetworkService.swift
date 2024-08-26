@@ -8,11 +8,11 @@
 import Foundation
 
 
-class NetworkService {
+class NetworkService : NetworkServiceDataSourceProtocol {
     static let shared = NetworkService()
     private var networkManager: NetworkManager?
     
-    private init() {
+    init() {
         networkManager = NetworkManager()
     }
         

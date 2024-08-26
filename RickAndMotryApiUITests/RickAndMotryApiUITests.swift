@@ -38,4 +38,19 @@ final class RickAndMotryApiUITests: XCTestCase {
             }
         }
     }
+    
+    
+    func testCharacterListAndDetail() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let firstCell = app.tables.cells.element(boundBy: 0)
+        XCTAssertTrue(firstCell.exists)
+        
+        firstCell.tap()
+        
+        let detailTitle = app.navigationBars.staticTexts["Characters"]
+        XCTAssertTrue(detailTitle.exists)
+    }
+    
 }

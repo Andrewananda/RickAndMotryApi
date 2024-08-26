@@ -13,11 +13,17 @@ class CharacterViewModel {
     private var characters = [CharacterModel]()
     private var currentPage = 1
     private var isFetching = false
+    private var repository: CharacterRepositoryProtocol
+    
     
     
     var onCharactersFetched: (() -> Void)?
     var isLoading: ((_ : Bool) -> Void)?
     var errorResponse: ((_ : NetworkError) -> Void)?
+    
+    init(repository: CharacterRepositoryProtocol) {
+        self.repository = repository
+    }
     
     func fetchCharacters(filter: String = "", shouldClear: Bool = false) {
         guard !isFetching else { return }
@@ -31,9 +37,7 @@ class CharacterViewModel {
             }
         }
         
-        
-        NetworkService.shared.fetchCharacters(page: currentPage, filter: filter) { [weak self] result in
-            guard let self = self else { return }
+        repository.fetchCharacters(page: currentPage, filter: filter) { result in
             self.isFetching = false
             self.isLoading?(false)
             
@@ -43,9 +47,12 @@ class CharacterViewModel {
                 self.currentPage += 1
                 self.onCharactersFetched?()
             case .failure(let error):
-                errorResponse?(error as? NetworkError ?? NetworkError.apiError(error.localizedDescription))
+                self.errorResponse?(error)
             }
         }
+        
+        
+        
     }
     
     func numberOfCharacters() -> Int {

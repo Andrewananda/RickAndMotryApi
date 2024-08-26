@@ -12,7 +12,7 @@ class CharacterViewController: UIViewController {
     
     //MARK: properties
     private let tableView = UITableView()
-    private let viewModel = CharacterViewModel()
+    private let viewModel: CharacterViewModel
     private let filters = ["Alive", "Dead", "Unknown"]
     private var selectedFilter: String = ""
     
@@ -27,6 +27,15 @@ class CharacterViewController: UIViewController {
         
     }
     
+    
+    init(viewModel: CharacterViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

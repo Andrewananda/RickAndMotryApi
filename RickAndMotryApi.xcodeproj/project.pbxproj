@@ -28,6 +28,15 @@
 		FAF2C2062C7D014D00C51E30 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2052C7D014D00C51E30 /* Presenter.swift */; };
 		FAF2C2092C7D03B100C51E30 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2082C7D03B100C51E30 /* Utilities.swift */; };
 		FAF2C20C2C7D129C00C51E30 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C20B2C7D129C00C51E30 /* FilterCollectionViewCell.swift */; };
+		FAF2C20E2C7D296600C51E30 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C20D2C7D296600C51E30 /* MockData.swift */; };
+		FAF2C2112C7D29CC00C51E30 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2102C7D29CC00C51E30 /* MockURLSession.swift */; };
+		FAF2C2132C7D2A1100C51E30 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2122C7D2A1100C51E30 /* NetworkServiceTests.swift */; };
+		FAF2C2162C7D2AC900C51E30 /* CharacterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2152C7D2AC900C51E30 /* CharacterViewModelTests.swift */; };
+		FAF2C2192C7D33B200C51E30 /* NetworkServiceDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2182C7D33B200C51E30 /* NetworkServiceDataSourceProtocol.swift */; };
+		FAF2C21B2C7D34B700C51E30 /* NetworkServiceMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C21A2C7D34B700C51E30 /* NetworkServiceMockup.swift */; };
+		FAF2C21E2C7D3AF500C51E30 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C21D2C7D3AF500C51E30 /* CharacterRepository.swift */; };
+		FAF2C2202C7D3B7900C51E30 /* CharacterRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C21F2C7D3B7900C51E30 /* CharacterRepositoryProtocol.swift */; };
+		FAF2C2222C7D41E500C51E30 /* CharacterRepositoryMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2C2212C7D41E500C51E30 /* CharacterRepositoryMockup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +83,15 @@
 		FAF2C2052C7D014D00C51E30 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		FAF2C2082C7D03B100C51E30 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FAF2C20B2C7D129C00C51E30 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAF2C20D2C7D296600C51E30 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		FAF2C2102C7D29CC00C51E30 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		FAF2C2122C7D2A1100C51E30 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		FAF2C2152C7D2AC900C51E30 /* CharacterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModelTests.swift; sourceTree = "<group>"; };
+		FAF2C2182C7D33B200C51E30 /* NetworkServiceDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceDataSourceProtocol.swift; sourceTree = "<group>"; };
+		FAF2C21A2C7D34B700C51E30 /* NetworkServiceMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMockup.swift; sourceTree = "<group>"; };
+		FAF2C21D2C7D3AF500C51E30 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		FAF2C21F2C7D3B7900C51E30 /* CharacterRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FAF2C2212C7D41E500C51E30 /* CharacterRepositoryMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryMockup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +169,10 @@
 		FAF2C1BD2C7CAC7E00C51E30 /* RickAndMotryApiTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2C2142C7D2AA500C51E30 /* CharacterViewModel */,
+				FAF2C20F2C7D29BD00C51E30 /* Network */,
 				FAF2C1BE2C7CAC7E00C51E30 /* RickAndMotryApiTests.swift */,
+				FAF2C20D2C7D296600C51E30 /* MockData.swift */,
 			);
 			path = RickAndMotryApiTests;
 			sourceTree = "<group>";
@@ -176,6 +197,8 @@
 		FAF2C1DC2C7CB1E600C51E30 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2C21C2C7D3AD000C51E30 /* Repository */,
+				FAF2C2172C7D338700C51E30 /* DataSource */,
 				FAF2C1DD2C7CB23F00C51E30 /* Models */,
 				FAF2C1D92C7CB13F00C51E30 /* Network */,
 			);
@@ -300,6 +323,42 @@
 				FAF2C1A92C7CAC7C00C51E30 /* SceneDelegate.swift */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		FAF2C20F2C7D29BD00C51E30 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2C2102C7D29CC00C51E30 /* MockURLSession.swift */,
+				FAF2C2122C7D2A1100C51E30 /* NetworkServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAF2C2142C7D2AA500C51E30 /* CharacterViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2C2152C7D2AC900C51E30 /* CharacterViewModelTests.swift */,
+			);
+			path = CharacterViewModel;
+			sourceTree = "<group>";
+		};
+		FAF2C2172C7D338700C51E30 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2C2182C7D33B200C51E30 /* NetworkServiceDataSourceProtocol.swift */,
+				FAF2C21A2C7D34B700C51E30 /* NetworkServiceMockup.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		FAF2C21C2C7D3AD000C51E30 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2C21D2C7D3AF500C51E30 /* CharacterRepository.swift */,
+				FAF2C21F2C7D3B7900C51E30 /* CharacterRepositoryProtocol.swift */,
+				FAF2C2212C7D41E500C51E30 /* CharacterRepositoryMockup.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,8 +499,11 @@
 				FAF2C1A82C7CAC7C00C51E30 /* AppDelegate.swift in Sources */,
 				FAF2C1E72C7CB70300C51E30 /* CharacterViewController.swift in Sources */,
 				FAF2C1FB2C7CE2BF00C51E30 /* UIViewController+Ext.swift in Sources */,
+				FAF2C21E2C7D3AF500C51E30 /* CharacterRepository.swift in Sources */,
 				FAF2C2092C7D03B100C51E30 /* Utilities.swift in Sources */,
+				FAF2C2202C7D3B7900C51E30 /* CharacterRepositoryProtocol.swift in Sources */,
 				FAF2C1DF2C7CB24E00C51E30 /* Character.swift in Sources */,
+				FAF2C21B2C7D34B700C51E30 /* NetworkServiceMockup.swift in Sources */,
 				FAF2C1FE2C7CFA8700C51E30 /* NetworkManager.swift in Sources */,
 				FAF2C20C2C7D129C00C51E30 /* FilterCollectionViewCell.swift in Sources */,
 				FAF2C1DB2C7CB15200C51E30 /* NetworkService.swift in Sources */,
@@ -450,7 +512,9 @@
 				FAF2C2062C7D014D00C51E30 /* Presenter.swift in Sources */,
 				FAF2C1EA2C7CB75D00C51E30 /* CharacterTableViewCell.swift in Sources */,
 				FAF2C2042C7D007800C51E30 /* CustomPopup.swift in Sources */,
+				FAF2C2222C7D41E500C51E30 /* CharacterRepositoryMockup.swift in Sources */,
 				FAF2C1EE2C7CB95B00C51E30 /* CharacterDetailView.swift in Sources */,
+				FAF2C2192C7D33B200C51E30 /* NetworkServiceDataSourceProtocol.swift in Sources */,
 				FAF2C1F82C7CE27E00C51E30 /* LoadingView.swift in Sources */,
 				FAF2C2012C7CFE2300C51E30 /* Constants.swift in Sources */,
 			);
@@ -460,7 +524,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2C2112C7D29CC00C51E30 /* MockURLSession.swift in Sources */,
 				FAF2C1BF2C7CAC7E00C51E30 /* RickAndMotryApiTests.swift in Sources */,
+				FAF2C2132C7D2A1100C51E30 /* NetworkServiceTests.swift in Sources */,
+				FAF2C2162C7D2AC900C51E30 /* CharacterViewModelTests.swift in Sources */,
+				FAF2C20E2C7D296600C51E30 /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
