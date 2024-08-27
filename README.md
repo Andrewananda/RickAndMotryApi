@@ -19,7 +19,7 @@ This iOS application allows users to explore and filter characters from the popu
 
 Here's a short video demonstrating the app's functionality:
 
-![App Demo](Screenshot/video.MP4)
+![App Demo](https://github.com/user-attachments/assets/6c80b095-748b-45b1-aa5d-40f37e400153)
 
 ## Installation
 
