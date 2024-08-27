@@ -1,4 +1,3 @@
-<readme>
     <h1>Rick and Morty Characters App</h1>
     <p>This iOS application allows users to explore and filter characters from the popular TV show "Rick and Morty" using data from the <a href="https://rickandmortyapi.com/">Rick and Morty API</a>. The app features character listings with filters for their status (Alive, Dead, Unknown), and uses the Kingfisher library for efficient image loading.</p>
 
@@ -67,6 +66,4 @@
     <ul>
         <li><a href="https://github.com/onevcat/Kingfisher">Kingfisher</a>: A powerful, pure-Swift library for downloading and caching images from the web.</li>
     </ul>
-    
-</readme>
 
