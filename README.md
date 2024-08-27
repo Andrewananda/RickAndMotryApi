@@ -36,3 +36,9 @@ https://github.com/user-attachments/assets/1f55ba98-667a-42d6-b11c-3534593141f4
    open RickAndMotryApi.xcworkspace
 ```
 
+## Run Tests
+
+Open project, run:
+```bash
+   CMD + U
+```
