@@ -26,5 +26,13 @@ Here's a short video demonstrating the app's functionality:
 1. Clone this repository:
    ```bash
    git clone https://github.com/Andrewananda/RickAndMotryApi.git
+```
+2. Cd to where you have cloned the project
+```bash
    cd RickAndMotryApi
+```
+3. Run project
+```bash 
    open RickAndMotryApi.xcworkspace
+```
+
