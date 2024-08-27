@@ -24,7 +24,7 @@ Here's a short video demonstrating the app's functionality:
 ## Installation
 
 1. Clone this repository:
-   ```bash
+```bash
    git clone https://github.com/Andrewananda/RickAndMotryApi.git
 ```
 2. Cd to where you have cloned the project
